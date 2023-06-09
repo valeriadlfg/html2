@@ -5,19 +5,22 @@
 <title>Squirrels</title>
 	<style>
 		table{ 
-			font-family: arial, sans-serif;
+			font-family: arial,;
   border-collapse: collapse;
 			width: 100%;}
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+ tr {
+  border: 10px solid #ddddd;
+  text-align: center;
+  padding: 2px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color:palegreen;
+	
+
 }
+		#listnames{ font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"; color:saddlebrown}
 		i{
 			color:red;
 			
@@ -29,7 +32,8 @@ tr:nth-child(even) {
 </head>
 
 <body>
-	<h1 style="text-align:center;">Facts about Squirrels</h1>
+	
+<h1 style="text-align:center;">Facts about Squirrels</h1>
 	
 <img src="images/squirrel.jpg" width="640" height="512" alt=""/>
 <h2>What do Squirrels eat?</h2>
@@ -44,53 +48,46 @@ tr:nth-child(even) {
 	<h2>How many species of squirrels are there in the world?</h2>
 	<img src="images/squirreltypes.jpeg" width="640" height="560" alt=""/>
 	<p>More than <i title="squirrel species">200 species</i> live all over the world, with the notable <b>exception</b> of <b>Australia</b>.</p>
-	<p><a href="https://www.animalspot.net/squirrel">Click here</a> to know more about the types of squirrels</p>
+	<p><a href="https://www.animalspot.net/squirrel">Click here</a> to know more about these types of squirrels.</p>
 	
 	<hr>
+<h3 id="listnames">Types of Squirrels</h3>
 	
-<table>
-	<h2>What types of squirrels can you find in Texas?</h2>
+<table style="width:60%; border: thin solid; ">
+		
+	<tr align="left">
+		<th><a href="groundsquirrels.html">Ground Squirrels</a></th>
+		<th>Tree Squirrels</th>
+		<th>Flying Squirrels</th>
+		</tr>
+		
+		<tr>
+			<td>Eastern Gray</td>
+			<td>Eastern Flying</td>
+			<td>Mexican Ground</td>
+		</tr>
 	
-  <tbody>
-    <tr>
-      <td>Tree Squirrels</td>
-      <td>Flying Squirrels</td>
-      <td><a href="groundsquirrels.html">Ground Squirrels</a></td>
-    </tr>
-    <tr>
-      <td>Eastern Gray</td>
-      <td>Eastern Flying</td>
-      <td>Mexican Ground</td>
-    </tr>
-    <tr>
-      <td>Eastern Fox</td>
-      <td></td>
-      <td>Rock Squirrels</td>
-    </tr>
-  </tbody>
-</table>
+	</table>
 	
-	<h1  style="border:2px solid Tomato;" id="listNames">Fun Facts about Squirrels</h1>
+	<h1  style="border:2px solid Tomato;">Fun Facts about Squirrels</h1>
 	
-	<u>
-		<li>A squirrel’s front teeth never stop growing. </li>
+
+		<li>A squirrels front <a href="https://www.treehugger.com/thmb/br9i5bDagqzKiiUldGXDpd-vbAk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2017__06__squirrel-teeth-ead81d1a6c8b4b93bd06cc934074f6c7.jpg">teeth</a> never stop growing. </li>
 		<li>Squirrels are acrobatic, intelligent, and adaptable. </li>
+<li id="facts"></li>
 		<li>Squirrels are born blind.</li>
 		<li>While flying squirrels can’t fly like birds or butterflies, they can glide between trees for distances up to 300 feet.</li>
 	
-	</u>
 	
+
 
 	
 	
 	
-
-	
-	
-	
-
-		
 	
 	
 </body>
+	<script>
+	document.getElementById("facts").innerHTML = "Squirrels can turn their ankles 180 degrees while climbing.";
+	</script>
 </html>
